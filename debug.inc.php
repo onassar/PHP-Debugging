@@ -56,7 +56,7 @@
     function ex($str = '')
     {
         if (!empty($str)) {
-            echo $str . PHP_EOL;
+            echo ($str) . (PHP_EOL);
         }
         exit(0);
     }
