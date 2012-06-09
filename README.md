@@ -6,3 +6,6 @@ variables, and exiting the current flow.
 
 I thought about showing examples here, but they all pretty much speak for
 themselves. Just call the function with a parameter, and see what happens :)
+
+For more information, check out my blog post:
+http://web.onassar.com/blog/2012/06/08/github-project-php-debugging-development-functions/
