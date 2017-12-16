@@ -6,12 +6,12 @@
      * Alias of native <debug_print_backtrace> or <debug_backtrace> functions,
      * with UI mods in the former case.
      * 
-     * @todo   make the $slim = false version of this call more visually
-     *         appealing
-     * @access public
-     * @param  boolean $slim. (default: true) whether or not to print a slim
-     *         version of the backtrace, or the fancy, verbose one
-     * @return void
+     * @todo    make the $slim = false version of this call more visually
+     *          appealing
+     * @access  public
+     * @param   boolean $slim. (default: true) whether or not to print a slim
+     *          version of the backtrace, or the fancy, verbose one
+     * @return  void
      */
     function backtrace($slim = true)
     {
@@ -29,9 +29,9 @@
      * 
      * Alias of native <error_log> function.
      * 
-     * @notes  same method signature as native <error_log> function
-     * @access public
-     * @return boolean error logging success
+     * @notes   same method signature as native <error_log> function
+     * @access  public
+     * @return  boolean error logging success
      */
     function el()
     {
@@ -44,8 +44,8 @@
      * 
      * Aggregate alias of <el> and <ex> functions.
      * 
-     * @access public
-     * @return void
+     * @access  public
+     * @return  void
      */
     function elx()
     {
@@ -59,12 +59,12 @@
      * 
      * Echos the passed in argument and exits the script.
      * 
-     * @access public
-     * @return void
+     * @access  public
+     * @return  void
      */
     function ex($str = '')
     {
-        if (!empty($str)) {
+        if (empty($str) === false) {
             echo ($str) . (PHP_EOL);
         }
         exit(0);
@@ -75,12 +75,12 @@
      * 
      * Alias of native <print_r> function with UI mods.
      * 
-     * @access public
-     * @param  mixed $exp variable to be printed out
-     * @param  boolean $return. (default: false) whether or not the the print_r
-     *         statement should be stored
-     * @return string|void if printable expression is to be returned, then
-     *         returned as string
+     * @access  public
+     * @param   mixed $exp variable to be printed out
+     * @param   boolean $return. (default: false) whether or not the the print_r
+     *          statement should be stored
+     * @return  string|void if printable expression is to be returned, then
+     *          returned as string
      */
     function pr($exp, $return = false)
     {
@@ -97,8 +97,8 @@
      * 
      * Alias of <pr> and <ex> functions.
      * 
-     * @access public
-     * @return void
+     * @access  public
+     * @return  void
      */
     function prx()
     {
@@ -112,8 +112,8 @@
      * 
      * Alias of native <var_dump> with UI mods.
      * 
-     * @access public
-     * @return void
+     * @access  public
+     * @return  void
      */
     function vd()
     {
@@ -130,8 +130,8 @@
      * 
      * Alias of <vd> and <ex> functions.
      * 
-     * @access public
-     * @return void
+     * @access  public
+     * @return  void
      */
     function vdx()
     {
