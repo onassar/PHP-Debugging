@@ -29,7 +29,7 @@
      * 
      * Alias of native <error_log> function.
      * 
-     * @notes   same method signature as native <error_log> function
+     * @note    same method signature as native <error_log> function
      * @access  public
      * @return  boolean error logging success
      */
