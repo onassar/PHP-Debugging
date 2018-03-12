@@ -15,7 +15,7 @@
      */
     function backtrace($slim = true)
     {
-        if ($slim) {
+        if ($slim === true) {
             echo '<pre>' . PHP_EOL;
             debug_print_backtrace();
             echo '</pre>' . PHP_EOL;
@@ -84,7 +84,7 @@
      */
     function pr($exp, $return = false)
     {
-        if ($return) {
+        if ($return === true) {
             return print_r($exp, true);
         }
         echo '<pre>';
