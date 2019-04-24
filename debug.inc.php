@@ -9,7 +9,7 @@
      * @todo    make the $slim = false version of this call more visually
      *          appealing
      * @access  public
-     * @param   boolean $slim. (default: true) whether or not to print a slim
+     * @param   bool $slim. (default: true) whether or not to print a slim
      *          version of the backtrace, or the fancy, verbose one
      * @return  void
      */
@@ -31,7 +31,7 @@
      * 
      * @note    same method signature as native <error_log> function
      * @access  public
-     * @return  boolean error logging success
+     * @return  bool error logging success
      */
     function el()
     {
@@ -77,7 +77,7 @@
      * 
      * @access  public
      * @param   mixed $exp variable to be printed out
-     * @param   boolean $return. (default: false) whether or not the the print_r
+     * @param   bool $return. (default: false) whether or not the the print_r
      *          statement should be stored
      * @return  string|void if printable expression is to be returned, then
      *          returned as string
